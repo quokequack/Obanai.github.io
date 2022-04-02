@@ -1,0 +1,90 @@
+*{
+  margin:0;
+  padding:0;
+  font-family:"Ubuntu",sans-serif;
+  box-sizing:border-box;
+  text-decoration:none; 
+}
+body{
+  background-image:linear-gradient(to bottom, #686de0,#3dc1d3,#7ed6df,#dff9fb);
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.profile-card{
+  width:400px;
+  text-align:center;
+  border-radius:8px;
+  overflow:hidden;
+}
+.card-header{
+  background:linear-gradient(to top,#95afc0,#7ed6df);
+  padding:60px 40px;
+}
+  .pic{
+  display:inline-block;
+  padding:7px;
+  background-image:linear-gradient(to right,#c7ecee,#686de0);
+  margin:auto;
+  border-radius:50%;
+  background-size:200% 200%;
+  animation:animated-gradient 2s linear infinite;
+}
+@keyframes animated-gradient{
+  25%{
+    background-position:right bottom;
+  }
+  50%{
+    background-position:left bottom;
+  }
+  75%{
+    background-position:right top;
+  }
+  100%{
+    background-position:left top;
+  }
+}
+.pic img{
+  display:block;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+}
+.name{
+  color:#ffffff;
+  font-size:28px;
+  font-family:"Trebuchet Ms",bold;
+}
+.desc{
+   color:#686de0;
+  font-size:15px;
+  font-family:"Trebuchet Ms",bold;
+}
+.sm{
+  display:flex;
+  justify-content:center;
+  margin:20px 0;
+}
+.sm a{
+  color:#ffffff;
+  width:56px;
+  font-size:22px;
+  transition:.3s linear;
+}
+.sm a:hover{
+  color:#686de0;
+}
+.contact-btn{
+  display:inline-block;
+  padding:12px 50px;
+  color:#686de0;
+  border:2px solid #686de0;
+  border-radius:6px;
+  margin-top:16px;
+  transition:0s linear;
+}
+.contact-btn:hover{
+  background:#686de0;
+  color:#ffffff;
+}
